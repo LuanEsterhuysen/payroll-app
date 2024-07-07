@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "number": "E001",
+    "team": "Team A",
+    "employeeName": "Jaco Jacobs",
+    "jobs": [
+      {
+        "jobName": "Drafting",
+        "jobDescription": "Lorem ipsum.",
+        "type": "Group 1",
+        "quantity": 10,
+        "rate": 207
+      },
+      {
+        "jobName": "Driving",
+        "jobDescription": "Lorem ipsum.",
+        "type": "Group 2",
+        "quantity": 15,
+        "rate": 205
+      },
+      {
+        "jobName": "Cutting",
+        "jobDescription": "Lorem ipsum.",
+        "type": "Group 1",
+        "quantity": 14,
+        "rate": 200
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "number": "E002",
+    "team": "Team B",
+    "employeeName": "Charlene van Zyl",
+    "jobs": [
+      {
+        "jobName": "Drafting",
+        "jobDescription": "Lorem ipsum.",
+        "type": "Group 2",
+        "quantity": 13,
+        "rate": 190
+      },
+      {
+        "jobName": "Driving",
+        "jobDescription": "Lorem ipsum.",
+        "type": "Group 1",
+        "quantity": 12,
+        "rate": 180
+      },
+      {
+        "jobName": "Cutting",
+        "jobDescription": "Lorem ipsum.",
+        "type": "Group 2",
+        "quantity": 11,
+        "rate": 170
+      }
+    ]
+  }
+]
