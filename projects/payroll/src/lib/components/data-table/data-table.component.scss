@@ -1,0 +1,21 @@
+.table-container {
+  margin: 20px 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-container label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
