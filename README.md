@@ -1,27 +1,40 @@
 # PayrollApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+This project was generated with Angular CLI version 16.2.14.
 
-## Development server
+## Setup Instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To set up and run the PayrollApp project, follow these steps:
 
-## Code scaffolding
+1. Ensure Node.js (version 18.20.3) and Angular CLI (version 16.2.14) are installed on your machine.
+2. Clone the repository to your local machine.
+3. Run `npm install` to install all the dependencies.
+4. Run `ng serve` for a development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Time Spent
 
-## Build
+Time was allocated as follows in the development of the project:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Initial Setup and Node.js Update: 15 mins
+- Mock Data and Services: 20 mins
+- UI Layout: 10 mins
+- Data Table Functionality (including sorting and searching): 2 hours
+- Error Handling and Debugging: 4 hours that was not counted as I went in my personal capacity since the problem intrigued me
+- Styling Of Data Table: 30 mins
+- Final Adjustments and Documentation: 15 mins
 
-## Running unit tests
+## Challenges
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+During the development of PayrollApp, several challenges were faced:
 
-## Running end-to-end tests
+- Data Fetching Error: Initially encountered a 404 error due to an incorrect file path in fetching mock data. This was resolved by correcting the path in the service.
+- Angular Material Compatibility: Faced issues with MatIconModule, which required multiple updates and installations to resolve compatibility issues.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Improvements
 
-## Further help
+Given more time, the following improvements could be implemented:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Pagination in Data Tables: To improve user interaction with data tables.
+- Constants and Style Management: Centralize constants and styles to streamline development and maintenance.
+- Complete Feature in its entirety: Complete all work given.
+- Expand Testing: Increase coverage and variety in testing to ensure broader validation of functionality.
