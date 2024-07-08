@@ -20,10 +20,6 @@ interface Employee {
 }
 
 interface EmployeeWithJob {
-  id: number;
-  number: string;
-  team: string;
-  employeeName: string;
   jobName: string;
   jobDescription: string;
   type: string;
@@ -38,10 +34,6 @@ interface EmployeeWithJob {
 })
 export class DataTableComponent implements OnInit {
   displayedColumns: string[] = [
-    'id',
-    'number',
-    'team',
-    'employeeName',
     'jobName',
     'jobDescription',
     'type',
@@ -50,7 +42,7 @@ export class DataTableComponent implements OnInit {
     'actions',
   ];
   dataSource = new MatTableDataSource<EmployeeWithJob>();
-  selectedAction = 'Primary Action';
+  selectedAction = 'Primary Action'; // set default
 
   @ViewChild(MatSort, { static: true }) sort!: MatSort;
 
@@ -61,7 +53,13 @@ export class DataTableComponent implements OnInit {
       const employeesWithJobs: EmployeeWithJob[] = [];
       data.forEach((employee) => {
         employee.jobs.forEach((job) => {
-          employeesWithJobs.push({ ...employee, ...job });
+          employeesWithJobs.push({
+            jobName: job.jobName,
+            jobDescription: job.jobDescription,
+            type: job.type,
+            quantity: job.quantity,
+            rate: job.rate,
+          });
         });
       });
       this.dataSource.data = employeesWithJobs;
@@ -71,11 +69,11 @@ export class DataTableComponent implements OnInit {
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    this.dataSource.filter = filterValue.trim().toLowerCase(); // Apply filter to the data source
   }
 
   selectAction(action: string) {
-    this.selectedAction = action;
+    this.selectedAction = action; // Set the selected action utton
   }
 
   logAction(element: EmployeeWithJob) {
